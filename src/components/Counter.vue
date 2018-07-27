@@ -22,7 +22,7 @@
 				this.count ++
 			},
 			decrement: function() {
-				//if (this.count === 0) { return } // commented out to test travis CI
+				(this.count === 0) { return }
 				this.count --
 			}
 		}
