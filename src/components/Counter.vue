@@ -22,7 +22,7 @@
 				this.count ++
 			},
 			decrement: function() {
-				(this.count === 0) { return }
+				if (this.count === 0) { return }
 				this.count --
 			}
 		}
