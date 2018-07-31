@@ -53,12 +53,11 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-        
-      # run tests!
 
-      # fix the sass error
+      # fixes: Node Sass could not find a binding for your current environment: Linux 64-bit with Node.js 8.x
       - run: npm rebuild node-sass
-      
+
+      # run tests!
       - run: npm run test:e2e
 
 workflows:
