@@ -55,6 +55,10 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
         
       # run tests!
+
+      # fix the sass error
+      - run: npm rebuild node-sass
+      
       - run: npm run test:e2e
 
 workflows:
